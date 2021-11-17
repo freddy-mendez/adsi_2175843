@@ -1,1 +1,31 @@
-<p>crear works!</p>
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-8 offset-2">
+            <form>
+                <div class="mb-3">
+                  <label for="codigo" class="form-label">Codigo</label>
+                  <input type="text" name="codigo" class="form-control" id="codigo" aria-describedby="codigoHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" name="nombre" class="form-control" id="nombre" aria-describedby="nombreHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="tematica" class="form-label">Tematica</label>
+                    <input type="text" name="tematica" class="form-control" id="tematica" aria-describedby="tematicaHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="autor" class="form-label">Autor</label>
+                    <input type="text" name="autor" class="form-control" id="autor" aria-describedby="autorHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="anhoPublicacion" class="form-label">Año de Publicación</label>
+                    <input type="number" name="anhoPublicacion" class="form-control" id="anhoPublicacion" aria-describedby="anhoPublicacionHelp">
+                  </div>
+                <button type="submit" class="btn btn-outline-primary float-start">Crear</button>
+                <button [routerLink]="['/listar-libros']" type="button" class="btn btn-outline-warning float-end">Volver</button>
+              </form>
+        </div>
+    </div>
+</div>
+

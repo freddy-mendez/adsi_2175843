@@ -1,1 +1,30 @@
-<p>listar works!</p>
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-8 offset-2">
+            <button [routerLink]="['/crear-libro']"  type="button" class="btn btn-outline-primary">Crear Libro</button>
+            <button [routerLink]="['/']"  type="button" class="btn btn-outline-warning float-end">Volver Inicio</button><br>
+            <table class="table table-success table-striped mt-4">
+                <thead>
+                  <tr>
+                    <th scope="col">Codigo</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Tematica</th>
+                    <th scope="col">Autor</th>
+                    <th scope="col">Año Publicación</th>
+                    <th scope="col">Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>SIS1023</td>
+                    <td>Angular desde Cero</td>
+                    <td>Desarrollo Web</td>
+                    <td>Google</td>
+                    <td>2020</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
